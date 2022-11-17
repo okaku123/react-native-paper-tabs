@@ -15,16 +15,8 @@ const styles = StyleSheet.create({
 
 function SwiperNative(props: SwiperProps) {
   const {
-    theme,
-    dark,
-    style,
     defaultIndex,
-    iconPosition,
-    showTextLabel,
-    uppercase,
-    mode,
     onChangeIndex,
-    showLeadingSpace,
     disableSwipe,
   } = props;
   const indexRef = React.useRef<number>(defaultIndex || 0);
@@ -80,21 +72,6 @@ function SwiperNative(props: SwiperProps) {
   );
   
   
-   const _ = {
-    index,
-    goTo,
-    children,
-    theme,
-    dark,
-    style,
-    position: position.current,
-    offset: offset.current,
-    iconPosition,
-    showTextLabel,
-    showLeadingSpace,
-    uppercase,
-    mode,
-  };
 
   return (
     <>
