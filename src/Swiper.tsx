@@ -51,7 +51,6 @@ function Swiper(props: SwiperProps) {
 
   return (
     <View style={styles.root}>
-      <TabsHeader {...renderProps} />
       <TabsContext.Provider value={{ goTo, index }}>
         {currentScreen}
       </TabsContext.Provider>
