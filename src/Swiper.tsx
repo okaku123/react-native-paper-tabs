@@ -3,7 +3,7 @@ import { StyleSheet, View } from 'react-native';
 import type { SwiperProps } from './utils';
 import type { TabScreenProps } from './TabScreen';
 import { TabsContext } from './context';
-import TabsHeader from './TabsHeader';
+
 
 function Swiper(props: SwiperProps) {
   const {
@@ -33,21 +33,7 @@ function Swiper(props: SwiperProps) {
   if (!currentScreen) {
     return null;
   }
-  const renderProps = {
-    index,
-    goTo,
-    children,
-    theme,
-    dark,
-    style,
-    offset: undefined,
-    position: undefined,
-    iconPosition,
-    showTextLabel,
-    showLeadingSpace,
-    uppercase,
-    mode,
-  };
+
 
   return (
     <View style={styles.root}>
