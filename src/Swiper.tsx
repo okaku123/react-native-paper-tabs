@@ -7,16 +7,8 @@ import { TabsContext } from './context';
 
 function Swiper(props: SwiperProps) {
   const {
-    theme,
-    dark,
-    style,
     defaultIndex,
     onChangeIndex,
-    iconPosition,
-    showTextLabel,
-    showLeadingSpace,
-    uppercase,
-    mode,
   } = props;
   const [index, setIndex] = React.useState<number>(defaultIndex || 0);
   const goTo = React.useCallback(
@@ -34,25 +26,9 @@ function Swiper(props: SwiperProps) {
     return null;
   }
   
-    const renderProps = {
-    index,
-    goTo,
-    children,
-    theme,
-    dark,
-    style,
-    offset: undefined,
-    position: undefined,
-    iconPosition,
-    showTextLabel,
-    showLeadingSpace,
-    uppercase,
-    mode,
-  };
-
 
   return (
-    <View style={styles.root} renderProps={renderProps}>
+    <View style={styles.root} >
       <TabsContext.Provider value={{ goTo, index }}>
         {currentScreen}
       </TabsContext.Provider>
