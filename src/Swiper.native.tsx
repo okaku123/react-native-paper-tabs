@@ -4,7 +4,6 @@ import ViewPager from 'react-native-pager-view';
 import type { SwiperProps } from './utils';
 import type { TabScreenProps } from './TabScreen';
 import { TabsContext } from './context';
-import TabsHeader from './TabsHeader';
 
 const styles = StyleSheet.create({
   viewPager: {
