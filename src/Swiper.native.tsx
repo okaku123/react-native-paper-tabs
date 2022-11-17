@@ -95,7 +95,6 @@ function SwiperNative(props: SwiperProps) {
   };
   return (
     <>
-      <TabsHeader {...renderProps} />
       <TabsContext.Provider value={{ goTo, index }}>
         <ViewPager
           style={styles.viewPager}
