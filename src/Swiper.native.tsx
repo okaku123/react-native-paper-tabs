@@ -80,7 +80,7 @@ function SwiperNative(props: SwiperProps) {
   );
   
   
-   const renderProps = {
+   const _ = {
     index,
     goTo,
     children,
@@ -100,7 +100,7 @@ function SwiperNative(props: SwiperProps) {
     <>
       <TabsContext.Provider value={{ goTo, index }}>
         <ViewPager
-          renderProps={renderProps}
+
           style={styles.viewPager}
           initialPage={index}
           scrollEnabled={!disableSwipe}
