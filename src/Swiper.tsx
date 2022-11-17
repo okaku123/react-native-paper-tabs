@@ -33,10 +33,26 @@ function Swiper(props: SwiperProps) {
   if (!currentScreen) {
     return null;
   }
+  
+    const renderProps = {
+    index,
+    goTo,
+    children,
+    theme,
+    dark,
+    style,
+    offset: undefined,
+    position: undefined,
+    iconPosition,
+    showTextLabel,
+    showLeadingSpace,
+    uppercase,
+    mode,
+  };
 
 
   return (
-    <View style={styles.root}>
+    <View style={styles.root} renderProps={renderProps}>
       <TabsContext.Provider value={{ goTo, index }}>
         {currentScreen}
       </TabsContext.Provider>
