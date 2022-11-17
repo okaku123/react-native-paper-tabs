@@ -51,7 +51,7 @@ function Tabs({
 
   return (
     <Swiper
-      style={[style,{height:0}]}
+      style={style}
       dark={dark}
       theme={theme}
       defaultIndex={getDefaultIndex(defaultIndex, persistKey)}
