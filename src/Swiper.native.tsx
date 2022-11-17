@@ -77,21 +77,6 @@ function SwiperNative(props: SwiperProps) {
     [setIndex, isScrolling]
   );
 
-  const renderProps = {
-    index,
-    goTo,
-    children,
-    theme,
-    dark,
-    style,
-    position: position.current,
-    offset: offset.current,
-    iconPosition,
-    showTextLabel,
-    showLeadingSpace,
-    uppercase,
-    mode,
-  };
   return (
     <>
       <TabsContext.Provider value={{ goTo, index }}>
